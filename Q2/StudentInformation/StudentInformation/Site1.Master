@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="StudentInformation.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <img src="./Images/student information.png" class="img-thumbnail logo" alt="...">
+                        <a class="navbar-brand" style="font-weight:bold; font-size:25px;" href="#">Students' Information System</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end navbar-header" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <asp:LinkButton ID="LinkButton1" runat="server" class="nav-link" OnClick="LinkButton1_Click">Home<span class="sr-only">(current)</span></asp:LinkButton>
+                                </li>
+                                <li class="nav-item">
+                                    <asp:LinkButton ID="LinkButton2" runat="server" class="nav-link" OnClick="LinkButton2_Click">Add Student</asp:LinkButton>
+                                </li>
+                                <li class="nav-item">
+                                    <asp:LinkButton ID="LinkButton3" runat="server" class="nav-link" OnClick="LinkButton3_Click">Add Course</asp:LinkButton>
+
+                                </li>
+                                <li class="nav-item">
+                                    <asp:LinkButton ID="LinkButton4" runat="server" class="nav-link" OnClick="LinkButton4_Click">Students' Information</asp:LinkButton>
+                                </li> 
+                            </ul>    
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <section>
+
+        </section>
+
+        <footer class="container-fluid">
+            <div class="row footer">
+                <div class="col-md-12">
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
